@@ -1,0 +1,142 @@
+/* inicio Rodapé */
+
+
+
+
+.conteudo-rodape {
+
+    font-style: normal;
+
+    font-weight: normal;
+
+    text-decoration: none;
+
+    color: rgb(1, 1, 1);
+
+}
+
+
+
+
+.conteudo-rodape a:hover {
+
+    color: #000000;
+
+    font-weight: bold;
+
+}
+
+
+
+
+.conteudo-rodape2 {
+
+    font-style: normal;
+
+    font-weight: normal;
+
+    text-decoration: none;
+
+    color: rgb(0, 0, 0);
+
+}
+
+
+
+
+.conteudo-rodape2 a:hover {
+
+    color: #000000;
+
+    font-weight: bold;
+
+}
+
+
+
+
+.imagens-rodape img {
+
+    width: 40px;
+
+    height: auto;
+
+    margin-left: 15px;
+
+    margin-bottom: 15px;
+
+}
+
+.imagens {
+
+    width: 50%;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+    
+    padding: 1rem;
+
+}
+
+
+.logo-rodape img {
+
+    width: 200px;
+
+    height: auto;
+
+    margin: auto;
+
+}
+
+
+
+
+.rodape {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    /* width: 1200px !important; */
+
+    /* margin: auto; */
+
+    background-color: #00000000;
+
+}
+
+
+
+
+/* ok rodapé */
+
+.fim {
+
+    font-family: Raleway;
+
+    font-style: normal;
+
+    font-weight: 600;
+
+    font-size: 14px;
+
+    color: #000000;
+
+    text-transform: uppercase;
+
+    padding: 25px 0 25px 0;
+
+    background-color: rgba(52, 87, 114, 0.663);
+
+    text-align: center;
+
+}
+
+/* ok rodapé */
+
+
+

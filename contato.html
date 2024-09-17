@@ -1,0 +1,586 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.1/css/all.css" crossorigin="anonymous">
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Alice&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+    </style>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Alice&family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Slab:wght@100;200;300;400;500;600;700;900&family=Varela+Round&display=swap');
+    </style>
+
+    <link rel="stylesheet" href="css/estilo-principal.css">
+
+    <link rel="stylesheet" href="css/sobre.css">
+
+    <link rel="stylesheet" href="css/contato.css">
+
+    <link rel="stylesheet" href="css/serviços.css">
+
+    <title>https:/luisblog.com.br</title>
+</head>
+
+
+
+
+<body>
+
+
+    <!-- Header -->
+
+    <header>
+
+        <div class="topo-conteudo">
+
+            <nav class="navbar navbar-expand-lg bg-body-tertiary">
+
+                <div class="container">
+
+                    <a class="navbar-brand" href="index.html">
+
+                        <img src="img/luisbloglogo.png" alt="Bootstrap" width="300px">
+
+                    </a>
+
+                    <!-- barra de pesquisa -->
+
+                    <div class="barrapesq">
+
+                        <form class="d-flex" role="search" style="padding-left: 50px;">
+
+                            <input class="form-control me-2" type="search" placeholder="O que você procura"
+                                aria-label="Oque você procura">
+
+                        </form>
+
+                    </div>
+
+                    <!-- barra de pesquisa -->
+
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+
+                        <span class="navbar-toggler-icon"></span>
+
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+                            <li class="nav-item">
+
+                                <a class="nav-link" href="index.html">Projetos</a>
+
+                            <li class="nav-item">
+
+                                <a class="nav-link" href="serviços.html">Biografia</a>
+
+
+                                <li class="nav-item">
+
+                                    
+                                    <a class="nav-link" href="contato.html">Contato</a>
+
+
+                            </li>
+                        </ul>
+
+                    </div>
+
+                </div>
+
+            </nav>
+
+        </div>
+
+
+
+
+    </header>
+
+    <!-- Header -->
+
+
+
+
+
+    </header>
+
+
+    <div class="banner">
+
+        <div class="texto-banner">
+
+            <h1>Cadastre-se</h1>
+
+            <p>Luis Blog</p>
+
+        </div>
+
+
+
+
+
+
+
+
+
+        <div class="container p-2 ">
+
+            <div class="form-image">
+
+                <img src="img/ensino.jpg" alt="Banner Contato">
+
+            </div>
+
+            <div class="form">
+
+                <form action="">
+
+                    <div class="form-header">
+
+                        <div class="title">
+
+                            <h1>Cadastre-se</h1>
+
+                        </div>
+
+                        <div class="login-button">
+
+                            <button><a href="#">Entrar</a></button>
+
+                        </div>
+
+                    </div>
+
+
+
+
+                    <div class="input-group">
+
+                        <div class="input-box">
+
+                            <label for="firstname">Primeiro Nome</label>
+
+                            <input id="firstname" type="text" name="firstname" placeholder="Digite seu primeiro nome"
+                                required>
+
+                        </div>
+
+
+
+
+                        <div class="input-box">
+
+                            <label for="lastname">Sobrenome</label>
+
+                            <input id="lastname" type="text" name="lastname" placeholder="Digite seu sobrenome"
+                                required>
+
+                        </div>
+
+                        
+                    
+                        
+    
+                        
+                        <div class="input-box">
+
+                            <label for="campocep">CEP</label>
+
+                            <input id="cep" type="text" name="campocep" placeholder="Digite seu CEP" onblur="pesquisacep(this.value);" 
+                            required onchange="">
+
+                        </div>
+
+                        <div class="input-box">
+
+                            <label for="campoestado">Estado</label>
+
+                            <input id="uf" type="text" name="uf" placeholder="Digite seu Estado" required>
+
+                        </div>
+
+
+                        <div class="input-box">
+
+                            <label for="campocidade">Cidade</label>
+
+                            <input id="cidade" type="text" name="cidade" placeholder="Digite sua Cidade" required>
+
+                        </div>
+
+                        <div class="input-box">
+
+                            <label for="campoendereço">Número</label>
+
+                            <input id="rua" type="text" name="num" placeholder="Digite seu número" required>
+
+                        </div>
+
+                        <div class="input-box">
+
+                            <label for="campobairro">Bairro</label>
+
+                            <input id="bairro" type="email" name="bairro" placeholder="Digite seu Bairro" required>
+
+                        </div>
+
+
+                        <div class="input-box">
+
+                            <label for="campoemail">E-mail</label>
+
+                            <input id="email" type="email" name="email" placeholder="Digite seu e-mail" required>
+
+                        </div>
+
+
+                        <div class="input-box">
+
+                            <label for="mensagem">Rua</label>
+
+                            <textarea class="input-msg" name="mensagem" placeholder="Digite sua rua"
+                                id="mensagem" cols="80" required rows="2"> </textarea>
+
+                        </div>
+                        
+                        
+                        
+                        
+                       
+                        <div class="input-box">
+
+                            <label for="numero">Referência</label>
+
+                            <input id="numero" type="text" name="numero" placeholder="Digite sua referência local" required>
+
+                        </div>
+
+
+
+
+                        <div class="input-box">
+
+                            <label for="number">Celular</label>
+
+                            <input id="number" type="tel" name="number" placeholder="(xx) xxxx-xxxx" required>
+
+                        </div>
+
+
+
+
+                        <div class="input-box">
+
+                            <label for="password">Senha</label>
+
+                            <input id="password" type="password" name="password" placeholder="Digite sua senha"
+                                required>
+
+                        </div>
+
+
+
+
+
+                        <div class="input-box">
+
+                            <label for="confirmPassword">Confirme sua Senha</label>
+
+                            <input id="confirmPassword" type="password" name="confirmPassword"
+                                placeholder="Digite sua senha novamente" required>
+
+                        </div>
+
+
+
+
+                        <div class="input-box">
+
+                            <label for="mensagem">Mensagem</label>
+
+                            <textarea class="input-msg" name="mensagem" placeholder="Digite sua mensagem a nós"
+                                id="mensagem" cols="80" required rows="2"> </textarea>
+
+                        </div>
+
+
+
+
+                    </div>
+
+
+
+
+                    <div class="gender-inputs">
+
+                        <div class="gender-title">
+
+                            <h6>Gênero</h6>
+
+                        </div>
+
+
+
+
+                        <div class="gender-group">
+
+                            <div class="gender-input">
+
+                                <input id="female" type="radio" name="gender">
+
+                                <label for="female">Feminino</label>
+
+                            </div>
+
+
+
+
+                            <div class="gender-input">
+
+                                <input id="male" type="radio" name="gender">
+
+                                <label for="male">Masculino</label>
+
+                            </div>
+
+
+
+
+                            <div class="gender-input">
+
+                                <input id="others" type="radio" name="gender">
+
+                                <label for="others">Outros</label>
+
+                            </div>
+
+
+
+
+                            <div class="gender-input">
+
+                                <input id="none" type="radio" name="gender">
+
+                                <label for="none">Prefiro não dizer</label>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+
+
+                    <div class="continue-button">
+
+                        <button><a href="index.html">Continuar</a> </button>
+
+                    </div>
+
+                </form>
+
+            </div>
+
+        </div>
+
+
+</body>
+
+<script>
+    function limpa_formulário_cep() {
+    document.getElementById('rua').value=("");
+    document.getElementById('bairro').value=("");
+    document.getElementById('cidade').value=("");
+    document.getElementById('uf').value=("");
+}
+ 
+function meu_callback(conteudo) {
+if (!("erro" in conteudo)) {
+    document.getElementById('rua').value=(conteudo.logradouro);
+    document.getElementById('bairro').value=(conteudo.bairro);
+    document.getElementById('cidade').value=(conteudo.localidade);
+    document.getElementById('uf').value=(conteudo.uf);
+}
+else {
+    limpa_formulário_cep();
+    alert("CEP não encontrado.");
+}
+}
+ 
+function pesquisacep(valor) {
+ 
+var cep = valor.replace(/\D/g, '');
+if (cep != "") {
+    var validacep = /^[0-9]{8}$/;
+    if(validacep.test(cep)) {
+ 
+        document.getElementById('rua').value="...";
+        document.getElementById('bairro').value="...";
+        document.getElementById('cidade').value="...";
+        document.getElementById('uf').value="...";
+ 
+        var script = document.createElement('script');
+        script.src = 'https://viacep.com.br/ws/'+ cep + '/json/?callback=meu_callback';
+        document.body.appendChild(script);
+    }
+    else {
+        limpa_formulário_cep();
+        alert("Formato de CEP inválido.");
+    }
+}
+else {
+    limpa_formulário_cep();
+}
+};
+</script>
+
+
+<div class="banner">
+
+    <div class="texto-banner">
+
+        <p>       </p>
+
+    </div>
+
+      
+<!-- rodapé -->
+
+<footer>
+
+    <footer class="rodape">
+
+        <div>
+
+            <p class="titulo-rodape">
+
+            <h4>Projetos</h4>
+
+            </p>
+
+            <p class="conteudo-rodape2">
+
+                <a class="nav-link" href="../Termos de Uso e Privacidade.pdf" target="_blank">Power B.I</a>
+                <a class="nav-link" href="../Termos de Uso e Privacidade.pdf" target="_blank">Pojeto de Audio e vídeo</a>
+                <a class="nav-link" href="../Termos de Uso e Privacidade.pdf" target="_blank">Elementos de Gameficação</a>
+                <a class="nav-link" href="../Termos de Uso e Privacidade.pdf" target="_blank">Experiência em html</a>
+                <a class="nav-link" href="../Termos de Uso e Privacidade.pdf" target="_blank">Experiência em java script</a>
+                
+
+                <br>
+
+            </p>
+
+        </div>
+       
+       
+        <div>
+
+            <p class="titulo-rodape">
+
+            <h4>Redes Sociais</h4>
+
+            </p>
+
+            <p class="imagens-rodape">
+
+                <a class="linksredessociais" href="https://web.facebook.com/?_rdc=1&_rdr&wtsid=rdr_0iwBqR540O1Y1p3Fr"
+                    target="_blank">
+
+                    <img src="img/facebook.png" alt="facebook">
+
+                </a>
+
+                <a class="linksredessociais" href="https://www.instagram.com/" target="_blank">
+
+                    <img src="img/instagram.png" alt="instagram">
+
+                </a>
+
+                <br>
+
+                <a class="linksredessociais" href="https://www.tiktok.com/foryou?lang=pt-BR" target="_blank">
+
+                    <img src="img/tik-tok.png" alt="tiktok">
+
+                </a>
+
+                <a class="linksredessociais" href="https://web.whatsapp.com/" target="_blank">
+
+                    <img src="img/whatsapp.png" alt="whatsapp">
+
+                </a>
+
+            </p>
+
+        </div>
+
+
+        
+        <div>
+
+            <p class="titulo-rodape">
+
+            <h4>Telefone</h4>
+
+            </p>
+
+            <p class="conteudo-rodape2">
+
+                <a class="nav-link" href="../Termos de Uso e Privacidade.pdf" target="_blank">(18) 99655-3801</a>
+               
+
+                <br>
+
+            </p>
+
+
+        </div>
+
+
+        <div>
+
+            <div class="logo-rodape">
+
+                <a href="index.html"> <img src="img/luisbloglogo.png" alt="logo-rodape"></a>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+
+
+
+    <p class="fim">
+
+        COPYRIGHT (C) 2024 AMZ resgates - TODOS OS DIREITOS RESERVADOS.
+
+    </p>
+
+</footer>
+
+</footer>
+
+<!-- rodapé -->

@@ -1,0 +1,841 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500&family=Open+Sans:wght@300;400;500;600&display=swap');
+
+
+
+
+
+
+
+.container {
+
+    width: 80%;
+
+    display: flex;
+
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.212);  
+
+}
+
+
+
+
+.form-image {
+
+    width: 50%;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    background-color: rgba(52, 87, 114, 0.663);
+
+    padding: 1rem;
+
+}
+
+
+
+
+
+
+
+
+
+.form-image img {
+
+    width: 31rem;
+
+}
+
+
+
+
+.form {
+
+    width: 50%;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+
+    align-items: center;
+
+    background-color: rgba(52, 87, 114, 0.663);
+
+    padding: 3rem;
+
+}
+
+
+
+
+.form-header {
+
+    margin-bottom: 3rem;
+
+    display: flex;
+
+    justify-content: space-between;
+
+}
+
+
+
+
+.login-button {
+
+    display: flex;
+
+    align-items: center;
+
+}
+
+
+
+
+.login-button button {
+
+    border: none;
+
+    background-color: #1b1a19;
+
+    padding: 0.4rem 1rem;
+
+    border-radius: 5px;
+
+    cursor: pointer;
+
+}
+
+
+
+
+.login-button button:hover {
+
+    background-color: #5072a9f1
+
+}
+
+
+
+
+.login-button button a {
+
+    text-decoration: none;
+
+    font-weight: 500;
+
+    color: #fff;
+
+}
+
+
+
+
+.form-header h1::after {
+
+    content: '';
+
+    display: block;
+
+    width: 5rem;
+
+    height: 0.3rem;
+
+    background-color: #121211;
+
+    margin: 0 auto;
+
+    position: absolute;
+
+    border-radius: 10px;
+
+}
+
+
+
+
+.input-group {
+
+    display: flex;
+
+    flex-wrap: wrap;
+
+    justify-content: space-between;
+
+    padding: 1rem 0;
+
+}
+
+
+
+
+.input-box {
+
+    display: flex;
+
+    flex-direction: column;
+
+    margin-bottom: 1.1rem;
+
+}
+
+
+
+
+.input-box input {
+
+    margin: 0.6rem 0;
+
+    padding: 0.8rem 1.2rem;
+
+    border: none;
+
+    border-radius: 10px;
+
+    box-shadow: 1px 1px 6px #0000001c;
+
+    font-size: 0.8rem;
+
+}
+
+
+
+
+.input-box input:hover {
+
+    background-color: #eeeeee75;
+
+}
+
+
+
+
+.input-box input:focus-visible {
+
+    outline: 1px solid #908d81f1;
+
+}
+
+
+
+
+.input-box label,
+
+.gender-title h6 {
+
+    font-size: 0.75rem;
+
+    font-weight: 600;
+
+    color: #000000c0;
+
+}
+
+
+
+
+.input-box input::placeholder {
+
+    color: #000000be;
+
+}
+
+
+
+
+
+.input-box textarea{
+
+    border-radius: 10px;
+
+    box-shadow: 1px 1px 8px #0000001c;
+
+    font-size: 0.8rem;
+
+    border: none;
+
+}
+
+
+
+
+.input-box textarea::placeholder{
+
+    color: #000000be;
+
+}
+
+
+
+
+.input-box textarea :hover{
+
+    background-color: #eeeeee75;
+
+    font-size: 0.8rem;
+
+}
+
+
+
+
+.gender-group {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    margin-top: 0.62rem;
+
+    padding: 0 .5rem;
+
+}
+
+
+
+
+.gender-input {
+
+    display: flex;
+
+    align-items: center;
+
+}
+
+
+
+
+.gender-input input {
+
+    margin-right: 0.35rem;
+
+}
+
+
+
+
+.gender-input label {
+
+    font-size: 0.81rem;
+
+    font-weight: 600;
+
+    color: #000000c0;
+
+}
+
+
+
+
+.continue-button button {
+
+    width: 100%;
+
+    margin-top: 2.5rem;
+
+    border: none;
+
+    background-color: #17341f96;
+
+    padding: 0.62rem;
+
+    border-radius: 5px;
+
+    cursor: pointer;
+
+}
+
+
+
+
+.continue-button button:hover {
+
+    background-color: #3a3a38d4;
+
+}
+
+
+
+
+.continue-button button a {
+
+    text-decoration: none;
+
+    font-size: 0.93rem;
+
+    font-weight: 500;
+
+    color: #fff;
+
+}
+
+
+
+
+@media screen and (max-width: 1330px) {
+
+    .form-image {
+
+        display: none;
+
+    }
+
+
+
+
+    .container {
+
+        width: 50%;
+
+    }
+
+
+
+
+    .form {
+
+        width: 100%;
+
+    }
+
+}
+
+
+
+
+@media screen and (max-width: 1064px) {
+
+    .container {
+
+        width: 90%;
+
+        height: auto;
+
+    }
+
+
+
+
+    .input-group {
+
+        flex-direction: column;
+
+        z-index: 5;
+
+        padding-right: 5rem;
+
+        max-height: 10rem;
+
+        overflow-y: scroll;
+
+        flex-wrap: nowrap;
+
+    }
+
+
+
+
+    .gender-inputs {
+
+        margin-top: 2rem;
+
+    }
+
+
+
+
+    .gender-group {
+
+        flex-direction: column;
+
+    }
+
+
+
+
+    .gender-title h6 {
+
+        margin: 0;
+
+    }
+
+
+
+
+    .gender-input {
+
+        margin-top: 0.5rem;
+
+    }
+
+}
+
+body {
+
+    background-color: #e8dcdcb7;
+
+}
+
+
+
+
+
+/* inicio Header */
+
+.logotipo-topo {
+
+    width: 170px;
+
+}
+
+
+
+
+header {
+
+    width: 100%;
+
+    background-color: #1151db;
+
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.442);
+
+    /* position: fixed; */
+
+}
+
+
+
+
+
+.navbar-nav {
+
+    /* font-family: Alice; */
+
+    font-style: normal;
+
+    font-weight: normal;
+
+    font-size: 20px;
+
+    text-decoration: none;
+
+    color: rgb(255, 255, 255);
+
+}
+
+
+
+
+.navbar-nav a:hover {
+
+    border-top: 1px solid #180909;
+
+    padding-top: 10px;
+
+    border-bottom: 1px solid #c9c5c3;
+
+    padding-bottom: 10px;
+
+    color: #a6a6a6;
+
+}
+
+/* fim Header */
+
+
+
+
+/* nome/texto2 */
+
+
+
+
+.banner {
+
+    height: 350px;
+
+    background-image: url(../imagem/imageminiconome.png);
+
+    background-repeat: no-repeat;
+
+    background-position: center;
+
+    background-size: cover;
+
+    padding-top: 100px;
+
+}
+
+
+
+
+.texto-banner {
+
+    width: 1200px;
+
+    margin: auto;
+
+    color: rgb(74, 68, 64);
+
+    padding-top: 10px;
+
+    text-shadow: 0 5px 5px rgba(0, 0, 0, 0.60);
+
+    text-align: center;
+
+}
+
+
+
+
+.texto-banner h1 {
+
+    font-family: Raleway;
+
+    font-size: 70px;
+
+    font-style: normal;
+
+    font-weight: 800px;
+
+    text-transform: uppercase;
+
+}
+
+
+
+
+.texto-banner p {
+
+    font-family: Raleway;
+
+    font-size: 30px;
+
+    font-style: normal;
+
+    font-weight: 300px;
+
+}
+
+
+
+
+h2 {
+
+    padding: 50px;
+
+    color: rgb(49, 46, 43);
+
+    text-align: center;
+
+    text-shadow: 0 5px 5px rgba(131, 67, 67, 0.25);
+
+    text-align: center;
+
+}
+
+/* nome/texto2 */
+
+
+
+
+.carousel-inner {
+
+    width: 500px;
+
+    margin: auto;
+
+    color: rgb(0, 0, 0);
+
+    padding-top: 0px;
+
+
+
+
+}
+
+
+
+
+.row {
+
+    width: 1000px;
+
+    margin: auto;
+
+    padding-top: 0px;
+
+}
+
+
+
+
+
+.padding h2 {
+
+    color: #000000;
+
+}
+
+
+
+
+.padding {
+
+    background-color: #000000;
+
+    width: 100%;
+
+    padding: 0 0 10px 3px;
+
+    background-size: cover;
+
+    background-size: cover;
+
+}
+
+
+
+
+/* produtos */
+
+
+
+
+/* inicio Rodapé */
+
+
+
+
+.conteudo-rodape {
+
+    font-style: normal;
+
+    font-weight: normal;
+
+    text-decoration: none;
+
+    color: rgb(1, 1, 1);
+
+}
+
+
+
+
+.conteudo-rodape a:hover {
+
+    color: #000000;
+
+    font-weight: bold;
+
+}
+
+
+
+
+.conteudo-rodape2 {
+
+    font-style: normal;
+
+    font-weight: normal;
+
+    text-decoration: none;
+
+    color: rgb(0, 0, 0);
+
+}
+
+
+
+
+.conteudo-rodape2 a:hover {
+
+    color: #000000;
+
+    font-weight: bold;
+
+}
+
+
+
+
+.imagens-rodape img {
+
+    width: 40px;
+
+    height: auto;
+
+    margin-left: 15px;
+
+    margin-bottom: 15px;
+
+}
+
+
+
+
+.logo-rodape img {
+
+    width: 200px;
+
+    height: auto;
+
+    margin: auto;
+
+}
+
+
+
+
+.rodape {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    /* width: 1200px !important; */
+
+    /* margin: auto; */
+
+    background-color: #00000000;
+
+}
+
+
+
+
+/* ok rodapé */
+
+.fim {
+
+    font-family: Raleway;
+
+    font-style: normal;
+
+    font-weight: 600;
+
+    font-size: 14px;
+
+    color: #000000;
+
+    text-transform: uppercase;
+
+    padding: 25px 0 25px 0;
+
+    background-color: rgba(52, 87, 114, 0.663);
+
+    text-align: center;
+
+}
+
+/* ok rodapé */
+
+
+
+
+/* fim Rodapé */
